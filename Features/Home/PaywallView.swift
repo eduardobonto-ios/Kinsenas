@@ -8,15 +8,15 @@ struct PaywallView: View {
             
             Spacer()
             
-            Text("Trial Expired")
+            Text("Unlock Kinsenas")
                 .font(.largeTitle)
                 .bold()
             
-            Text("Unlock Kinsenas for ₱99 lifetime")
+            Text("One-time purchase • Lifetime access")
                 .foregroundColor(.gray)
             
-            // 🔥 Unlock Button
-            Button("Unlock for ₱99") {
+            // Unlock Button (price removed)
+            Button("Unlock") {
                 Task {
                     await purchaseManager.buy()
                 }
@@ -28,7 +28,7 @@ struct PaywallView: View {
             .cornerRadius(12)
             .padding(.horizontal, 40)
             
-            // 🔁 Restore Button
+            // Restore Button
             Button("Restore Purchase") {
                 Task {
                     await purchaseManager.restore()
