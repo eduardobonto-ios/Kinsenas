@@ -1,0 +1,18 @@
+# Xcode
+DerivedData/
+.build/
+*.xcworkspace
+*.xcuserdata
+
+# macOS
+.DS_Store
+
+# LLaMA model (IMPORTANT)
+*.gguf
+*.bin
+
+# Build
+build/
+
+
+
